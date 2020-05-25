@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style/vod.css" />
+        <script src="https://kit.fontawesome.com/54bba90930.js" crossorigin="anonymous"></script>
+        <title>VOD FR</title>
+    </head>
+
+    <body> 
+        <div id="acceuil"> 
+            <a href="vod.html" id="logo"><i class="fas fa-video fa-1x"></i>  VOD FR</a>
+        </div>
+
+        <div id="supprimerFilm">
+            
+            <h1>Supprimer un film</h1>
+
+            <form action="supprimerFilm.php" method="POST" name="données" >
+
+                <label>Titre du film :</label>
+                <input type="text" name="titre" placeholder="Saisir le titre du film à supprimer" required />
+                <br/>
+                <br/>
+
+                <div id="bouton">
+                    <button type="submit" value="Rechercher">
+                        <i class="fas fa-check fa-1x"></i>
+                    </button>
+
+                    <button type="reset" value="Annuler">
+                        <i class="fas fa-times fa-1x"></i>
+                    </button>
+                </div>
+     
+            </form>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,268 @@
+body{
+  background-color: #222222;
+  font-family: Arial, Calibri, Verdana, sans-serif;
+  background-color: #1d1d24;
+  margin: 0;
+  padding: 0;
+}
+
+#acceuil{
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 25px;
+  width: 190px;
+}
+#acceuil a {
+  display: inline-block;
+  border: 2px solid #b1b4c1;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #f4fffd;
+  text-align: center;
+  margin: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  transition-duration: 0.3s;
+}
+#acceuil #logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+#acceuil a:hover {
+  background-color: #af7ac5;
+  border: 2px solid #af7ac5;
+}
+h1, h2{
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin: auto;
+}
+p{
+  font-size: 10px;
+}
+
+#conteneur{
+  margin: auto;
+  text-align: center;
+  width: 700px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 99;
+}
+
+.button{
+  width: 190px;
+  height: 190px;
+  color: #F3F3F3;
+  padding: 16px 32px;
+  vertical-align:middle;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px;
+  border: none;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+}
+.button:hover{
+  color: #333;
+  transform: translateY(4px);
+}
+
+/* Bouton pour la liste des films */
+
+.button1{
+  background-color: #18A8F7;
+  box-shadow: 0 7px #0080C6;
+}
+.button1:hover{
+  background-color: #1497de;
+  box-shadow: 0 5px #006BA5;
+}
+
+/* Bouton pour rechercher un film */
+
+.button2{
+  background-color: #ffe300;
+  box-shadow: 0 7px #968500;
+}
+.button2:hover{
+  background-color: #EED400;
+  box-shadow: 0 5px #726500;
+}
+
+/* Bouton pour ajouter un film */
+
+.button3{
+  background-color: #1DE282;
+  box-shadow: 0 7px #00B65D;
+}
+.button3:hover{
+  background-color: #02C867;
+  box-shadow: 0 5px #00974D;
+}
+
+/* Bouton pour supprimer un film */
+
+.button4{
+  background-color: #F44040;
+  box-shadow: 0 7px #D32020;
+}
+.button4:hover{
+  background-color: #E83535;
+  box-shadow: 0 5px #B60C0C;
+}
+
+/* form pour rechercher un film */
+
+#rechercheFilm{
+  width: 650px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 35px;
+  z-index: 99;
+}
+
+/* Champs de saisi */
+
+input{
+  color: black;
+  background-color: white;
+  margin: 8px 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  outline: none;
+  border: 3px solid #555;
+  border-radius: 4px;
+  box-shadow: 0 4px #444;
+  transition: 0.5s;
+}
+/* Effet appliqué au champ lorsqu'il est sélectionnée */
+
+input:focus{
+  border: 3px solid #333;
+  box-shadow: 0 2px #333;
+}
+
+input[type=text]{
+  width: 400px;
+}
+input[type=date]{
+  width: 180px;
+}
+
+/* Boutons submit/reset */
+
+button{
+  color: white;
+  margin: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+button:hover{
+  color: #333;
+  transform: translateY(2px);
+}
+
+/* Couleur et ombre appliquée aux bouton submit/reset */
+
+button[type=submit] {
+  background-color: #329136;
+  box-shadow: 0 6px #1E8022;
+}
+button[type=submit]:hover {
+  background-color: #298A2D;
+  box-shadow: 0 4px #046607;
+}
+button[type=reset] {
+  background-color: #e90909;
+  box-shadow: 0 6px #BF0000;
+}
+button[type=reset]:hover {
+  background-color: #d00000;
+  box-shadow: 0 4px #890000;
+}
+
+/* Conteneur de chaque formulaire */
+
+#filmRecherche, #supprimerFilm, #filmSupprimer, #filmAjouter, #ajoutFilm, #collectionFilm{
+  color: white;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+  z-index: 99;
+}
+
+form{
+  margin: 25px;
+}
+
+b{
+  font-size: 20px;
+}
+
+table {
+  color: #af7ac5;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  border-collapse: collapse;
+  border-radius: 4px;
+}
+
+/* Première ligne des tableaux */
+
+th{
+  padding: 15px;
+  background-color: #af7ac5;
+  color: white;
+}
+
+/* Colonnes des tableaux */
+
+td {
+  padding: 20px 35px 20px 35px;
+  transition: 0.3s;
+}
+
+/* Lignes des tableaux */
+
+tr:hover{
+  color: white;
+}
+
+/*  Une ligne sur deux des tableaux sera d'une couleur spécifique */
+
+tr:nth-child(even) {
+  background-color: #313340;
+}
+
+/*  Centrage des boutons pour le formulaire d'ajout d'un film */
+
+#bouton{
+  margin: auto;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
